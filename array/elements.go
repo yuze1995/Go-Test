@@ -22,6 +22,7 @@ func Element4(prev string) {
 	fmt.Println("")
 }
 
+
 func print(prev string, count int) {
 	fmt.Print(prev + strconv.Itoa(count) + " ")
 }
