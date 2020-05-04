@@ -4,6 +4,7 @@ import "fmt"
 
 import "Go-Test/print"
 import "Go-Test/array"
+import "Go-Test/slice"
 
 import log "github.com/sirupsen/logrus"
 
@@ -28,6 +29,15 @@ func main() {
 	printLine()
 
 	array.PassReferenceType()
+	printLine()
+
+	slice.Element()
+	printLine()
+
+	slice.MakeSlice()
+	printLine()
+
+	slice.AppendSlice()
 	printLine()
 }
 
