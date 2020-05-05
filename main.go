@@ -39,6 +39,9 @@ func main() {
 
 	slice.AppendSlice()
 	printLine()
+
+	slice.AppendExample2()
+	printLine()
 }
 
 func printLine() {

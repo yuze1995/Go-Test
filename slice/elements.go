@@ -30,3 +30,16 @@ func AppendSlice() {
 		fmt.Printf("index: %d, len: %d, cap: %d, pointer: %p, content: %v \n", i, len(slice0), cap(slice0), slice0, slice0)
 	}
 }
+
+func AppendExample2() {
+	var slice0 = make([]int, 0)
+	fmt.Printf("%s, %d, %p, %v\n", reflect.TypeOf(slice0), slice0, slice0, slice0)
+	slice1 := append(slice0, 1)
+	fmt.Printf("%s, %d, %p, %v\n", reflect.TypeOf(slice1), slice1, slice1, slice1)
+	slice2 := append(slice1, 1)
+	fmt.Printf("%s, %d, %p, %v\n", reflect.TypeOf(slice2), slice2, slice2, slice2)
+	slice3 := append(slice2, 1)
+	fmt.Printf("%s, %d, %p, %v\n", reflect.TypeOf(slice3), slice3, slice3, slice3)
+	slice4 := append(slice3, 1)
+	fmt.Printf("%s, %d, %p, %v\n", reflect.TypeOf(slice4), slice4, slice4, slice4)
+}
